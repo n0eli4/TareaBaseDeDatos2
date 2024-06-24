@@ -1,5 +1,4 @@
 import requests
-
 base_url = "http://localhost:3000/"
 
 #endpoints
@@ -26,8 +25,21 @@ def bloquear_usuario(email, clave, correo_bloquear):
     return response.json
 
 def informacion_usuario():
+    return
 
 def marcar_correo():
+    return
 
 def desmarcar_correo():
+    return
 
+
+#Interfaz
+
+print("[--]     Bienvenido a CommuniKen     [--]")
+print("[--]                                 [--]")
+print("[--]    Seleccione una opcion        [--]")
+print("[--]    para continuar:              [--]")
+print("[--]_________________________________[--]")
+print("")
+print("")
