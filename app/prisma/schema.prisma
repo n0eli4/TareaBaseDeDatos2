@@ -26,6 +26,7 @@ model Usuario {
   correos_recibidos  Correo[] @relation("destinatario")
   direcciones_favoritas Direccion_Favorita[]
   correos_bloqueados Correo_Bloqueado[]
+  contactos     Contacto[]
 }
 
 model Correo {
@@ -48,7 +49,9 @@ model Direccion_Favorita {
 model Contacto {
   id             Int      @id @default(autoincrement())
   direccion_correo String
-  nombre         String?
+  nombre         String
+  usuario_id      Int
+  usuario        Usuario   @relation(fields: [usuario_id], references: [id_usuario])
 }
 
 model Correo_Bloqueado {

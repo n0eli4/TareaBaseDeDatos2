@@ -1,4 +1,0 @@
-requests
-commonpy
-bun
-elysia
